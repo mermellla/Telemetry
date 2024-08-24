@@ -1,1 +1,25 @@
 
+The Telemetry API provides one endpoint /query, for query execution. Refer back to Identity API if you need a refresher on how GraphQL works.
+
+Developer Notes
+To access the Vehicle data under the Telemetry API, a token exchange transaction is required to obtain a 2nd JWT to get permission to access a given vehicle. Please check Token Exchange API prior to using this endpoint. 
+
+🔏 Base URLs
+Dev
+Production
+https://telemetry-api.dev.dimo.zone
+
+Authentication
+To use the 2nd JWT for the Telemetry API, send the queries with an authorization header like below. Replace the <privilege_token> with the token received from the Token Exchange API.
+
+Copy
+{
+    "Authorization": "Bearer <privilege_token>"
+}
+GraphQL Operations
+The Telemetry API provides one endpoint /query, for query execution. Refer back to Identity API if you need a refresher on how GraphQL works.
+
+GraphQL Playground
+Dev
+Production
+https://telemetry-api.dev.dimo.zone
