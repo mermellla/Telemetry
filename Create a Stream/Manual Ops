@@ -1,0 +1,20 @@
+https://docs.dimo.zone/developer-platform/dimo-streams/configure-a-stream
+
+pub-sub topic has its own peer-to-peer overlay network that is built aqnd maintained by a set of BitTorrent-like Trackers:
+
+**Create/Unset/Check streams - hide private_key by implementing wallet integration **
+
+
+Configure a new JSON RPC Provider: new ethers.providers.JsonRpcProvider(rpc)
+
+Create a new signer using the private_key of your wallet, and the provider object initiated in step 1: new ethers.Wallet(private_key.value || '', provider);.
+
+Saved ABI values from https://github.com/DIMO-Network/dimo-identity/blob/main/abis/DimoRegistry.json
+
+Get the contract object using the DIMO registry address, ABI file, and signer.
+
+Call the createVehicleStream with your accessible vehicle token_id to create the stream.
+
+Developer Notes
+
+When you create a stream, you are automatically a subscriber of it.
