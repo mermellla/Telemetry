@@ -26,11 +26,16 @@ Update web dashboard with total earnings and patterns over time of emissions met
 
 **Kinesis**
 In-stream data refers to the capability of processing a data stream that collects, processes, and analyzes data.
+https://github.com/aws-solutions/streaming-data-solution-for-amazon-kinesis-and-amazon-msk
+About
+A solutions that automatically configures the AWS services necessary to easily capture, store, process, and deliver streaming data. This solution helps you solve for real-time streaming use cases like capturing high volume application logs, analyzing clickstream data, continuously delivering to a data lake, and more.
 
 Lambda
 
 Function for determining low emissions driving
--stack ranked for best driving on the network 
+-stack ranked for best driving on the network daily, weekly, monthly
+
+(Bonus Points: ML via SageMaker predictive modeling with a trainable foundational model endpoint)
 
 Step Function**
 -Smart Contract Implementation
